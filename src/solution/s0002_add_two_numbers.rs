@@ -54,7 +54,41 @@ use crate::util::linked_list::{ListNode, to_list};
 // }
 impl Solution {
     pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        Some(Box::new(ListNode::new(0)))
+        let mut head = Some(Box::new(ListNode::new(0)));
+        let mut tail = &mut head;
+        let (mut a, mut b) = (l1, l2);
+        let (mut step_in, mut a_end, mut b_end) = (false, false, false);
+        loop {
+            let a_val = match a {
+                Some(node) => {
+                    a = node.next;
+                    node.val
+                }
+                None => {
+                    a_end = true;
+                    0
+                }
+            };
+            let b_val = match b {
+                Some(node) => {
+                    b = node.next;
+                    node.val
+                }
+                None => {
+                    b_end = true;
+                    0
+                }
+            };
+            if a_end && b_end && !step_in {
+                return head.unwrap().next;
+            }
+            let mut num = (a_val + b_val + if step_in { 1 } else { 0 });
+            step_in = num >= 10; 
+            num = num % 10;
+            tail.as_mut().unwrap().next = Some(Box::new(ListNode::new(num)));
+            tail = &mut tail.as_mut().unwrap().next;
+        }
+        head
     }
 }
 
@@ -66,5 +100,7 @@ mod tests {
 
     #[test]
     fn test_2() {
+        assert_eq!(Solution::add_two_numbers(to_list(vec![1, 2, 3]), to_list(vec![1, 2, 3])), to_list(vec![2, 4, 6]));
+        assert_eq!(Solution::add_two_numbers(to_list(vec![9, 9, 9, 9]), to_list(vec![9, 9, 9])), to_list(vec![8, 9, 9, 0, 1]));
     }
 }
