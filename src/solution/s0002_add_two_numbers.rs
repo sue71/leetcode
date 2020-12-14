@@ -9,27 +9,27 @@
  * Input: l1 = [2,4,3], l2 = [5,6,4]
  * Output: [7,0,8]
  * Explanation: 342 + 465 = 807.
- * 
+ *
  * Example 2:
- * 
+ *
  * Input: l1 = [0], l2 = [0]
  * Output: [0]
- * 
+ *
  * Example 3:
- * 
+ *
  * Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
  * Output: [8,9,9,9,0,0,0,1]
- * 
+ *
  *  
  * Constraints:
- * 
+ *
  * 	The number of nodes in each linked list is in the range [1, 100].
  * 	0 <= Node.val <= 9
  * 	It is guaranteed that the list represents a number that does not have leading zeros.
- * 
+ *
  */
 pub struct Solution {}
-use crate::util::linked_list::{ListNode, to_list};
+use crate::util::linked_list::{to_list, ListNode};
 
 // problem: https://leetcode.com/problems/add-two-numbers/
 // discuss: https://leetcode.com/problems/add-two-numbers/discuss/?currentPage=1&orderBy=most_votes&query=
@@ -42,7 +42,7 @@ use crate::util::linked_list::{ListNode, to_list};
 //   pub val: i32,
 //   pub next: Option<Box<ListNode>>
 // }
-// 
+//
 // impl ListNode {
 //   #[inline]
 //   fn new(val: i32) -> Self {
@@ -53,7 +53,10 @@ use crate::util::linked_list::{ListNode, to_list};
 //   }
 // }
 impl Solution {
-    pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    pub fn add_two_numbers(
+        l1: Option<Box<ListNode>>,
+        l2: Option<Box<ListNode>>,
+    ) -> Option<Box<ListNode>> {
         let mut head = Some(Box::new(ListNode::new(0)));
         let mut tail = &mut head;
         let (mut a, mut b) = (l1, l2);
@@ -83,7 +86,7 @@ impl Solution {
                 return head.unwrap().next;
             }
             let mut num = (a_val + b_val + if step_in { 1 } else { 0 });
-            step_in = num >= 10; 
+            step_in = num >= 10;
             num = num % 10;
             tail.as_mut().unwrap().next = Some(Box::new(ListNode::new(num)));
             tail = &mut tail.as_mut().unwrap().next;
@@ -100,7 +103,13 @@ mod tests {
 
     #[test]
     fn test_2() {
-        assert_eq!(Solution::add_two_numbers(to_list(vec![1, 2, 3]), to_list(vec![1, 2, 3])), to_list(vec![2, 4, 6]));
-        assert_eq!(Solution::add_two_numbers(to_list(vec![9, 9, 9, 9]), to_list(vec![9, 9, 9])), to_list(vec![8, 9, 9, 0, 1]));
+        assert_eq!(
+            Solution::add_two_numbers(to_list(vec![1, 2, 3]), to_list(vec![1, 2, 3])),
+            to_list(vec![2, 4, 6])
+        );
+        assert_eq!(
+            Solution::add_two_numbers(to_list(vec![9, 9, 9, 9]), to_list(vec![9, 9, 9])),
+            to_list(vec![8, 9, 9, 0, 1])
+        );
     }
 }
