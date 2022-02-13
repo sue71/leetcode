@@ -4,3 +4,4 @@ mod search_insert_position_35;
 mod longest_increasing_subsequence_300;
 mod maximum_subarray_53;
 mod maximum_depth_of_binary_tree_104;
+mod minimum_depth_of_binary_tree;
