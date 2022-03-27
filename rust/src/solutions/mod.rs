@@ -11,3 +11,5 @@ mod pow_x_n;
 mod remove_duplicates_83;
 mod permutations;
 mod subsets;
+mod find_minimum_in_rotated_sorted_array;
+mod minimum_size_subarray_sum;
