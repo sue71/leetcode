@@ -8,15 +8,22 @@
 impl Solution {
     pub fn find_min(nums: Vec<i32>) -> i32 {
         let mut lc = 0;
-        let mut rc = nums.len() / 2;
+        let mut rc = nums.len() - 1;
+        let mut mid = 0;
 
         loop {
-            if rc - lc == 0 {
-                break
+            if lc >= rc {
+                break;
+            }
+            mid = (rc + lc) / 2;
+            if nums[mid] > nums[rc] {
+                lc = mid + 1;
+            } else {
+                rc = mid;
             }
         }
 
-        0
+        nums[lc]
     }
 }
 // @lc code=end
