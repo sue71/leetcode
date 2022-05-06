@@ -6,7 +6,9 @@
 
 class MinHeap {
   constructor(private readonly items: number[]) {}
-  add(val: number) {}
+
+  add(val: number) {
+  }
 
   pop(k: number) {
     return this.items[this.items.length - k];
