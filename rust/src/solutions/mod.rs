@@ -17,3 +17,4 @@ mod subarray_sum_equals_k;
 mod group_anagrams_49;
 mod kth_largest_element_in_a_stream_703;
 mod intersection_of_two_arrays_349;
+mod zigzag_conversion_6;

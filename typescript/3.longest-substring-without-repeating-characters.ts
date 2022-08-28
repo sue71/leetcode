@@ -4,6 +4,7 @@
  * [3] Longest Substring Without Repeating Characters
  */
 
+
 // @lc code=start
 function lengthOfLongestSubstring(s: string): number {
     const set = new Set();
@@ -12,14 +13,16 @@ function lengthOfLongestSubstring(s: string): number {
     let res = 0;
 
     [...s].forEach((v) => {
+        rc++;
         if (set.has(v)) {
             set.delete(v);
             lc++;
         } else {
-            set.add(v);
-            rc++;
+            res = Math.max(res, rc - lc);
         }
-        res = Math.max(res, rc - lc);
+
+        set.add(v);
+        console.log(v, lc, rc, Array.from(s).slice(lc, rc), set);
     });
 
     return res;
