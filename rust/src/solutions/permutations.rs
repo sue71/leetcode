@@ -4,6 +4,9 @@
  * [46] Permutations
  */
 
+pub struct Solution {
+}
+
 // @lc code=start
 impl Solution {
     pub fn permute(nums: Vec<i32>) -> Vec<Vec<i32>> {

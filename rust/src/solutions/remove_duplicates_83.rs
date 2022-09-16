@@ -20,6 +20,8 @@ impl ListNode {
     }
   }
 }
+pub struct Solution {
+}
 
 // @lc code=start
 impl Solution {

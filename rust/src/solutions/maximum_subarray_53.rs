@@ -4,6 +4,7 @@
  * [53] Maximum Subarray
  */
 
+pub struct Solution {}
 
 // dp[i] = 任意の要素からiまでの総和の最大値
 // dp[i + 1] = dp[i] + nums[i + 1] or nums[i + 1]

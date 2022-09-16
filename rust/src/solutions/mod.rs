@@ -20,3 +20,4 @@ mod intersection_of_two_arrays_349;
 mod zigzag_conversion_6;
 mod path_sum_112;
 mod string_to_integer_atoi_8;
+mod permutations_46;

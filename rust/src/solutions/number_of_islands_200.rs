@@ -3,6 +3,7 @@
  *
  * [200] Number of Islands
  */
+pub struct Solution {}
 
 // @lc code=start
 impl Solution {

@@ -3,6 +3,8 @@
  *
  * [6] Zigzag Conversion
  */
+pub struct Solution {
+}
 
 // @lc code=start
 impl Solution {

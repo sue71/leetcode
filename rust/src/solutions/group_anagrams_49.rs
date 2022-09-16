@@ -3,6 +3,7 @@
  *
  * [49] Group Anagrams
  */
+pub struct Solution {}
 
 // @lc code=start
 use std::collections::HashMap;

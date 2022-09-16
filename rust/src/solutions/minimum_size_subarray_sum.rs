@@ -3,6 +3,7 @@
  *
  * [209] Minimum Size Subarray Sum
  */
+pub struct Solution {}
 
 // @lc code=start
 impl Solution {

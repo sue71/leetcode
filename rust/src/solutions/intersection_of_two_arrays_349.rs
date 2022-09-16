@@ -4,6 +4,7 @@
  * [349] Intersection of Two Arrays
  */
 
+pub struct Solution {}
 // @lc code=start
 use std::collections::HashSet;
 

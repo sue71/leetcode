@@ -4,6 +4,8 @@
  * [695] Max Area of Island
  */
 
+pub struct Solution {}
+
 // @lc code=start
 impl Solution {
     pub fn max_area_of_island(mut grid: Vec<Vec<i32>>) -> i32 {

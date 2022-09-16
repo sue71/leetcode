@@ -5,6 +5,7 @@
  */
 
 // dp[i][j] = 最初のi個の要素について、最後の要素がa_jとなるように選んだときの最長の長さ
+pub struct Solution {}
 
 // @lc code=start
 

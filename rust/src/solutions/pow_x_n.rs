@@ -4,6 +4,8 @@
  * [50] Pow(x, n)
  */
 
+pub struct Solution {
+}
 
 // @lc code=start
 impl Solution {

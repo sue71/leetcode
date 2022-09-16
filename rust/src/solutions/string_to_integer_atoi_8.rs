@@ -3,6 +3,8 @@
  *
  * [8] String to Integer (atoi)
  */
+pub struct Solution {
+}
 
 // @lc code=start
 impl Solution {

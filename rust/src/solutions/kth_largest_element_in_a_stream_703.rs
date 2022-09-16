@@ -3,6 +3,7 @@
  *
  * [703] Kth Largest Element in a Stream
  */
+pub struct Solution {}
 
 // @lc code=start
 struct KthLargest {

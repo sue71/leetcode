@@ -3,6 +3,8 @@
  *
  * [35] Search Insert Position
  */
+pub struct Solution {
+}
 
 // @lc code=start
 impl Solution {

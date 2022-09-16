@@ -3,6 +3,8 @@
  *
  * [20] Valid Parentheses
  */
+pub struct Solution {
+}
 
 // @lc code=start
 use std::collections::HashMap;

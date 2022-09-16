@@ -3,6 +3,7 @@
  *
  * [3] Longest Substring Without Repeating Characters
  */
+pub struct Solution {}
 
 // @lc code=start
 use std::collections::HashMap;
