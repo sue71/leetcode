@@ -17,6 +17,7 @@ mod permutations;
 mod permutations_46;
 mod pow_x_n;
 mod remove_duplicates_83;
+mod search_in_rotated_sorted_array_33;
 mod search_insert_position_35;
 mod string_to_integer_atoi_8;
 mod subarray_sum_equals_k;
