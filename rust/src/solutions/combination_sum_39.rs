@@ -33,7 +33,9 @@ impl Solution {
             }
         }
 
-        dfs(vec![], 0, 0, &mut res, target, &candidates);
+        let mut c = candidates.clone();
+        c.sort();
+        dfs(vec![], 0, 0, &mut res, target, &c);
 
         res
     }
