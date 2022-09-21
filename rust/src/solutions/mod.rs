@@ -1,3 +1,4 @@
+mod combination_sum_39;
 mod find_minimum_in_rotated_sorted_array;
 mod generate_parentheses_22;
 mod group_anagrams_49;
@@ -22,5 +23,6 @@ mod search_insert_position_35;
 mod string_to_integer_atoi_8;
 mod subarray_sum_equals_k;
 mod subsets;
+mod unique_paths_62;
 mod valid_parentheses;
 mod zigzag_conversion_6;
