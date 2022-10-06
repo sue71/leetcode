@@ -25,5 +25,6 @@ mod string_to_integer_atoi_8;
 mod subarray_sum_equals_k;
 mod subsets;
 mod unique_paths_62;
+mod unique_paths_ii_63;
 mod valid_parentheses;
 mod zigzag_conversion_6;
