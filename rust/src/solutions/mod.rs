@@ -27,4 +27,5 @@ mod subsets;
 mod unique_paths_62;
 mod unique_paths_ii_63;
 mod valid_parentheses;
+mod validate_binary_search_tree_98;
 mod zigzag_conversion_6;
