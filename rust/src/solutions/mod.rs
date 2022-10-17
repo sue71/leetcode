@@ -1,5 +1,6 @@
 mod binary_tree_level_order_traversal_102;
 mod combination_sum_39;
+mod construct_binary_tree_from_preorder_and_inorder_traversal_105;
 mod find_minimum_in_rotated_sorted_array;
 mod generate_parentheses_22;
 mod group_anagrams_49;
