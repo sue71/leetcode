@@ -1,0 +1,5 @@
+{
+  "rust-analyzer.linkedProjects": ["./rust/Cargo.toml"],
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "leetcode.workspaceFolder": "/Users/sueda/.ghq/github.com/sue71/leetcode/rust/src/solutions"
+}
