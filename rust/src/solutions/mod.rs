@@ -4,4 +4,5 @@ mod number_of_islands_200;
 mod search_in_rotated_sorted_array_33;
 mod string_to_integer_atoi_8;
 mod two_sum_1;
+mod valid_parentheses_20;
 mod zigzag_conversion_6;
