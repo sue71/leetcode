@@ -2,6 +2,7 @@ mod add_two_numbers_2;
 mod longest_substring_without_repeating_characters_3;
 mod number_of_islands_200;
 mod search_in_rotated_sorted_array_33;
+mod search_insert_position_35;
 mod string_to_integer_atoi_8;
 mod two_sum_1;
 mod valid_parentheses_20;
