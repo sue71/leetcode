@@ -4,6 +4,8 @@
  * [8] String to Integer (atoi)
  */
 
+struct Solution {}
+
 // @lc code=start
 impl Solution {
     pub fn my_atoi(s: String) -> i32 {

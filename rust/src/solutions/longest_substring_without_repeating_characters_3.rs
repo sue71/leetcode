@@ -3,11 +3,11 @@
  *
  * [3] Longest Substring Without Repeating Characters
  */
-
+struct Solution {}
 
 // @lc code=start
 
-use std::{collections::HashMap};
+use std::collections::HashMap;
 
 impl Solution {
     pub fn length_of_longest_substring(s: String) -> i32 {
@@ -34,4 +34,3 @@ impl Solution {
     }
 }
 // @lc code=end
-

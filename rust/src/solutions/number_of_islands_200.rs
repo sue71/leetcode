@@ -4,6 +4,7 @@
  * [200] Number of Islands
  */
 
+struct Solution {}
 // @lc code=start
 impl Solution {
     pub fn num_islands(grid: Vec<Vec<char>>) -> i32 {
@@ -21,7 +22,7 @@ impl Solution {
 
         fn dfs(i: usize, j: usize, grid: &mut Vec<Vec<char>>) {
             if grid[i][j] == '0' {
-                return
+                return;
             }
             if grid[i][j] == '1' {
                 grid[i][j] = '0';
@@ -42,7 +43,5 @@ impl Solution {
 
         res
     }
-
 }
 // @lc code=end
-

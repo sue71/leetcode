@@ -4,6 +4,8 @@
  * [6] Zigzag Conversion
  */
 
+struct Solution {}
+
 // @lc code=start
 impl Solution {
     pub fn convert(s: String, num_rows: i32) -> String {
@@ -41,4 +43,3 @@ impl Solution {
     }
 }
 // @lc code=end
-
