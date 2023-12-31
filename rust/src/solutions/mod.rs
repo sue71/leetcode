@@ -1,5 +1,6 @@
 mod add_two_numbers_2;
 mod longest_substring_without_repeating_characters_3;
+mod next_permutation_31;
 mod number_of_islands_200;
 mod permutations_46;
 mod search_in_rotated_sorted_array_33;
