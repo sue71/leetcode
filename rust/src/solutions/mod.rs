@@ -1,5 +1,6 @@
 mod add_two_numbers_2;
 mod combination_sum_39;
+mod group_anagrams_49;
 mod longest_substring_without_repeating_characters_3;
 mod next_permutation_31;
 mod number_of_islands_200;
