@@ -9,6 +9,7 @@ mod permutations_46;
 mod search_in_rotated_sorted_array_33;
 mod search_insert_position_35;
 mod string_to_integer_atoi_8;
+mod subsets_78;
 mod two_sum_1;
 mod valid_parentheses_20;
 mod zigzag_conversion_6;
