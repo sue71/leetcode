@@ -8,6 +8,7 @@ mod maximum_subarray_53;
 mod next_permutation_31;
 mod number_of_islands_200;
 mod permutations_46;
+mod pow_x_n_50;
 mod search_in_rotated_sorted_array_33;
 mod search_insert_position_35;
 mod string_to_integer_atoi_8;
