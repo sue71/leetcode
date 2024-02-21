@@ -14,6 +14,7 @@ mod search_insert_position_35;
 mod string_to_integer_atoi_8;
 mod subsets_78;
 mod two_sum_1;
+mod unique_paths_ii_63;
 mod valid_parentheses_20;
 mod validate_binary_search_tree_98;
 mod zigzag_conversion_6;
