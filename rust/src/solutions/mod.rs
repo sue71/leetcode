@@ -20,3 +20,4 @@ mod validate_binary_search_tree_98;
 mod zigzag_conversion_6;
 mod best_time_to_buy_and_sell_stock_121;
 mod first_missing_positive_41;
+mod convert_sorted_array_to_binary_search_tree_108;
