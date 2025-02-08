@@ -28,3 +28,4 @@ mod paint_fence_276;
 mod split_bst_776;
 mod move_zeroes_283;
 mod k_th_symbol_in_grammar_779;
+mod capacity_to_ship_packages_within_d_days_1011;
