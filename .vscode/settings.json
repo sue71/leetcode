@@ -1,4 +1,7 @@
 {
   "rust-analyzer.linkedProjects": ["./rust/Cargo.toml"],
-  "rust-analyzer.inlayHints.typeHints.enable": false
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "github.copilot.enable": {
+    "*": false
+  }
 }
